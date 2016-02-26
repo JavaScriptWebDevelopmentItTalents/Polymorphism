@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="validator.js"></script>
+<script src="observable.js"></script>
+<script src="AbstractNotepad.js"></script>
+<script src="SimpleNotepad.js"></script>
+<script src="AbstractElectronicDevice.js"></script>
+<script src="SecuredNotepad.js"></script>
+<script src="Page.js"></script>
+<script src="AbstractElectronicDevice.js"></script>
+<script src="ElectronicSecuredNotepad.js"></script>
+<script src="notepadFactory.js"></script>
+<script >
+    var securedNotepad = notepadFactory(5, '123', true);
+    securedNotepad.addTextToPage(1, 'baba', '12');
+    securedNotepad.addTextToPage(1, 'baba', '123');
+    securedNotepad.addTextToPage(2, 'dedo', '123');
+    securedNotepad.addTextToPage(3, 'strinka', '123');
+    securedNotepad.addTextToPage(4, '123', '123');
+    securedNotepad.showAllPages('123');
+    securedNotepad.showAllPagesWithDigits('123');
+</script>
+</body>
+</html>
